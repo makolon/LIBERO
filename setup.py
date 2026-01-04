@@ -16,6 +16,7 @@ setup(
     packages=[package for package in find_packages() if package.startswith("libero")],
     install_requires=[],
     package_data={
+        "libero": ["datasets/**"],
         "libero.libero": ["assets/**", "bddl_files/**", "init_files/**"],
     },
     include_package_data=True,
