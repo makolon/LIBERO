@@ -16,12 +16,18 @@ setup(
     packages=[package for package in find_packages() if package.startswith("libero")],
     install_requires=[],
     package_data={
+        "libero": [
+            "assets/*", "assets/**/*",
+            "bddl_files/*", "bddl_files/**/*",
+            "init_files/*", "init_files/**/*",
+            "datasets/*", "datasets/**/*",
+        ],
         "libero.libero": [
             "assets/*", "assets/**/*",
             "bddl_files/*", "bddl_files/**/*",
             "init_files/*", "init_files/**/*",
+            "datasets/*", "datasets/**/*",
         ],
-        "libero": ["datasets/*", "datasets/**/*"],
     },
     include_package_data=True,
     python_requires=">=3",
